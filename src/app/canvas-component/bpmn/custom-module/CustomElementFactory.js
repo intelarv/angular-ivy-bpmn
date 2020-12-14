@@ -35,7 +35,7 @@ export default function CustomElementFactory(bpmnFactory, moddle) {
 
     // add type to businessObject if custom
     if (/^hf/.test(type)) {
-      debugger;
+      // debugger;
       if (!attrs.businessObject) {
         attrs.businessObject = {
           type: type

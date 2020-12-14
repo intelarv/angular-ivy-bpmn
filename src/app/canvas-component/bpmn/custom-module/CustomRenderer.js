@@ -223,73 +223,73 @@ CustomRenderer.prototype.drawShape = function(p, element) {
 
   var typeCssStyle, cssStyle, textMsg, width = DEFAULT_WIDTH, height = DEFAULT_HEIGHT;
   switch (type){
-    case 'hfdelay:timedelay':{
+    case 'hf:timedelay':{
       typeCssStyle = 'delay';
       cssStyle = 'timedelay-delay';
       textMsg = 'Timedelay';
     }
     break;
-    case 'hfdelay:timewindow':{
+    case 'hf:timewindow':{
       typeCssStyle = 'delay';
       cssStyle = 'timewindow-delay';
       textMsg = 'Time Window';
     }
       break;
-    case 'hfdelay:waituntil':{
+    case 'hf:waituntil':{
       typeCssStyle = 'delay';
       cssStyle = 'waituntil-delay';
       textMsg = 'Wait Until';
     }
       break;
-    case 'hfflowcontrol:exit':{
+    case 'hf:exit':{
       typeCssStyle = 'control';
       cssStyle = 'exit-control';
       textMsg = 'exit';
     }
       break;
-    case 'hfflowcontrol:start':{
+    case 'hf:start':{
       typeCssStyle = 'control';
       cssStyle = 'start-control';
       textMsg = 'start';
     }
       break;
-    case 'hfflowcontrol:multisplit':{
+    case 'hf:multisplit':{
       typeCssStyle = 'control';
       cssStyle = 'multisplit-control';
       textMsg = 'multisplit';
     }
       break;
-    case 'hfflowcontrol:truefalse':{
+    case 'hf:truefalse':{
       typeCssStyle = 'control';
       cssStyle = 'truefalse-control';
       textMsg = 'truefalse';
     }
       break;
-    case 'hfmessages:email':{
+    case 'hf:email':{
       typeCssStyle = 'message';
       cssStyle = 'email-msg';
       textMsg = 'Email';
     }
       break;
-    case 'hfmessages:msgcenter':{
+    case 'hf:msgcenter':{
       typeCssStyle = 'message';
       cssStyle = 'msgcenter-msg';
       textMsg = 'Email';
     }
       break;
-    case 'hfmessages:pns':{
+    case 'hf:pns':{
       typeCssStyle = 'message';
       cssStyle = 'pns-msg';
       textMsg = 'Push Notifications';
     }
       break;
-    case 'hfmessages:sms':{
+    case 'hf:sms':{
       typeCssStyle = 'message';
       cssStyle = 'sms-msg';
       textMsg = 'Text';
     }
       break;
-    case 'hfmessages:webhook':{
+    case 'hf:webhook':{
       typeCssStyle = 'message';
       cssStyle = 'webhook-msg';
       textMsg = 'WebHook';
@@ -320,9 +320,6 @@ CustomRenderer.prototype.getShapePath = function(shape) {
   }
 
 
-/*  if (type === 'hfmessages:email') {
-    return this.getShapePath(p, element);
-  }*/
 };
 
 CustomRenderer.prototype.drawConnection = function(p, element) {

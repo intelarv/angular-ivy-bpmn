@@ -8,9 +8,9 @@ import OrderingProvider from 'diagram-js/lib/features/ordering/OrderingProvider'
  * connections are always rendered on top.
  */
 export default function CustomOrderingProvider(eventBus, canvas) {
-  debugger;
+  //debugger;
   OrderingProvider.call(this, eventBus);
-  debugger;
+  //debugger;
   this.getOrdering = function(element, newParent) {
 
     if (element.type === 'hf:connection') {

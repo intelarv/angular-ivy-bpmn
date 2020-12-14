@@ -56,7 +56,7 @@ CustomRules.prototype.init = function() {
   function canConnect(source, target, connection) {
 
     if(connection){
-      debugger;
+      // debugger;
     }
 
     // only judge about custom elements

@@ -28,7 +28,7 @@ import { throwError } from 'rxjs';
 })
 export class CanvasComponent implements OnInit, AfterContentInit, OnChanges, OnDestroy {
 
-  private defaultcanvasurl = '/assets/hf/canvas/bpmn/initial.bpmn';
+  private defaultcanvasurl = '/assets/bpmn/initial.bpmn';
   // instantiate BpmnJS with component
   private modeler: CustomModeler;
 
